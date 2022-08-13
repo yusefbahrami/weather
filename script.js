@@ -21,6 +21,7 @@ function setInfo(data) {
   } else {
     cityName.innerHTML = data.cod;
     temp.innerHTML = data.message;
+    description.innerHTML = "";
   }
   cityInput.focus();
 }
