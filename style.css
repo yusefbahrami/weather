@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Aboreto";
+  src: url("font/Aboreto-Regular.ttf") format("woff");
+}
+@font-face {
+  font-family: "RedHatText-SemiBold";
+  src: url("font/RedHatText-SemiBold.ttf") format("woff");
+}
+@font-face {
+  font-family: "Syncopate";
+  src: url("font/Syncopate-Regular.ttf");
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-image: url("1131217.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  width: 600px;
+  min-height: 400px;
+  height: auto;
+  background-color: rgba(5, 155, 205, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.content h1 {
+  font-size: 65px;
+  color: snow;
+  font-family: "Syncopate";
+  font-weight: bold;
+  margin-top: 15px;
+}
+.content .searchBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.content .searchBox input {
+  width: 70%;
+  height: 50px;
+  border-radius: 10px;
+  border-style: none;
+  outline: none;
+  padding: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: snow;
+}
+.content .searchBox input::placeholder {
+  color: snow;
+}
+
+.content .searchBox button {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border-style: none;
+  font-family: "RedHatText-SemiBold";
+  font-weight: 600;
+  font-size: 18px;
+  background-color: rgba(224, 217, 217, 0.637);
+  color: snow;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.content .searchBox button:hover {
+  background-color: rgb(5, 155, 205);
+  box-shadow: 0 0 3px snow;
+}
+.content .weatherStatus {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  color: snow;
+}
+.content .weatherStatus * {
+  margin: 5px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.content .weatherStatus h2 {
+  font-size: 35px;
+}
