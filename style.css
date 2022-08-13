@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: "Aboreto";
-  src: url("font/Aboreto-Regular.ttf") format("woff");
-}
-@font-face {
   font-family: "RedHatText-SemiBold";
   src: url("font/RedHatText-SemiBold.ttf") format("woff");
 }
